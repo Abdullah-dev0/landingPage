@@ -10,7 +10,7 @@ import {
 	Instagram,
 	Linkedin,
 	MessageCircle,
-	Twitter
+	Twitter,
 } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
@@ -24,7 +24,7 @@ export function HeroSection() {
 	const [openItem, setOpenItem] = useState<string | undefined>("");
 
 	return (
-		<div className="relative bg-gradient-to-br from-white to-[#4BB7D3]/10  mx-auto">
+		<div className="relative bg-gradient-to-br from-white to-[#4BB7D3]/10  mx-auto overflow-hidden">
 			<div className="max-w-6xl mx-auto px-4 p5-8 md:py-16 lg:pt-24">
 				<div className="grid lg:grid-cols-2 gap-8 lg:gap-12 pt-28 max-md:pt-48">
 					<div className="space-y-4 md:space-y-6 text-left lg:text-left">
@@ -397,20 +397,21 @@ export function HeroSection() {
 			<section className="py-12 px-4 max-w-5xl mx-auto">
 				<h2 className="text-center text-[#2b3a67] text-3xl md:text-4xl font-bold mb-8">Follow Us on YouTube</h2>
 
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-y-5 gap-5">
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
 					{/* Video 1 */}
-					<div className="aspect-video rounded-lg mx-auto overflow-hidden">
+					<div className="aspect-video w-full rounded-lg overflow-hidden shadow-md">
 						<iframe
 							width="343"
 							height="193"
 							src="https://www.youtube.com/embed/3Q_Z8ThXr3M"
 							title="How To Write a Cold Email - Best Template"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							referrerPolicy="strict-origin-when-cross-origin"></iframe>
+							referrerPolicy="strict-origin-when-cross-origin"
+							allowFullScreen></iframe>
 					</div>
 
 					{/* Video 2 */}
-					<div className="aspect-video rounded-lg mx-auto overflow-hidden">
+					<div className="aspect-video w-full rounded-lg overflow-hidden shadow-md">
 						<iframe
 							width="343"
 							height="193"
@@ -422,7 +423,7 @@ export function HeroSection() {
 					</div>
 
 					{/* Video 3 */}
-					<div className="aspect-video rounded-lg mx-auto overflow-hidden">
+					<div className="aspect-video w-full rounded-lg overflow-hidden shadow-md">
 						<iframe
 							width="343"
 							height="193"
@@ -434,7 +435,7 @@ export function HeroSection() {
 					</div>
 
 					{/* Video 4 */}
-					<div className="aspect-video rounded-lg mx-auto overflow-hidden">
+					<div className="aspect-video w-full rounded-lg overflow-hidden shadow-md">
 						<iframe
 							width="343"
 							height="193"
@@ -446,7 +447,7 @@ export function HeroSection() {
 					</div>
 
 					{/* Video 5 */}
-					<div className="aspect-video rounded-lg mx-auto overflow-hidden">
+					<div className="aspect-video w-full rounded-lg overflow-hidden shadow-md">
 						<iframe
 							width="343"
 							height="193"
@@ -458,7 +459,7 @@ export function HeroSection() {
 					</div>
 
 					{/* Video 6 */}
-					<div className="aspect-video rounded-lg mx-auto overflow-hidden">
+					<div className="aspect-video w-full rounded-lg overflow-hidden shadow-md">
 						<iframe
 							width="343"
 							height="193"
